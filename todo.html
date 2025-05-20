@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <header class="navBar">
+      <div>Todo List</div>
+      <input type="search" placeholder="Search" id="searchtextbox" />
+    </header>
+
+    <!-- Main Content Section -->
+    <div>
+      <h1>Welcome to the Todo List Application</h1>
+
+      <!-- Todo Box -->
+      <section class="todo-inner">
+        <div class="input">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Your Task"
+            id="addtaskinput"
+          />
+          <input type="hidden" id="saveindex" />
+
+          <!-- Button Section -->
+          <button class="button" id="addtaskbtn">Add Task</button>
+          <button class="button" id="savetaskbtn" style="display: none">
+            Save Task
+          </button>
+          <button class="delete-btn" id="deleteallbtn">Delete All</button>
+        </div>
+
+        <!-- Task List -->
+
+        <table
+          class="taskcontainer">
+          <tbody id="addedtasklist">
+            <!-- <tr>
+              <td>1</td>
+              <td><p class="task">Hello!</p></td>
+              <td>
+                <button class="text-primary"><i class="fa-solid fa-pen-to-square"></i> Edit</button>
+              </td>
+              </td>
+              <td>
+                <button class="text-danger"><i class="fa-solid fa-trash"></i> Delete</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td><p class="task">My name is Inderjeet</p></td>
+              <td>
+                <button class="text-primary"><i class="fa-solid fa-pen-to-square"></i> Edit</button>
+              </td>
+              <td>
+                <button class="text-danger"><i class="fa-solid fa-trash"></i> Delete</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td><p class="task">Bye!</p></td>
+              <td>
+                <button class="text-primary"><i class="fa-solid fa-pen-to-square"></i> Edit</button>
+              </td>
+              <td>
+                <button class="text-danger"><i class="fa-solid fa-trash"></i> Delete</button>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
